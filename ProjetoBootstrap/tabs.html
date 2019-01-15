@@ -24,50 +24,52 @@
 
 <div class="container">
 
-
     <div class="page-header">
-        <h1>Bootstrap Alert</h1>
+        <h1>Bootstrap Tabs</h1>
+        <p class="lead">Alterne facilmente entre conteudos</p>
+
+    </div><!-- Page-header -->
+
+    <!-- criação de abas -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active"><a href="#info" role="tab" data-toggle="tab">Informações </a> </li>
+        <li><a role="tab" href="#avaliacoes" data-toggle="tab">Avaliações </a> </li>
+        <li><a role="tab" href="#compre" data-toggle="tab">Compre tambem </a> </li>
+    </ul>
+
+    <!-- conteudo das abas-->
+    <div class="tab-content">
+
+        <!-- aba de informações-->
+        <div class="tab-pane active" role="tabpanel" id="info">
+            <h3>Informaçoes</h3>
+        </div>
+
+
+        <!-- aba de Avaliações-->
+        <div class="tab-pane" role="tabpanel" id="avaliacoes">
+            <h3>Avaliações</h3>
+        </div>
+
+        <!-- aba de Compre tambem-->
+        <div class="tab-pane" role="tabpanel" id="compre">
+            <h3>Compre tambem</h3>
+        </div>
+
     </div>
-
-    <div class="alert alert-success">
-
-        <button type="button" class="close" data-dismiss="alert">
-            <span>&times;</span>
-        </button>
-
-        <strong>success</strong>
-    </div>
-
-    <div class="alert alert-info">
-        <button type="button" class="close" data-dismiss="alert">
-            <span>&times;</span>
-        </button>
-
-        <strong>info</strong>
-    </div>
-
-    <div class="alert alert-warning">
-        <button type="button" class="close" data-dismiss="alert">
-            <span>&times;</span>
-        </button>
-
-        <strong>warning</strong>
-    </div>
-
-    <div class="alert alert-danger">
-        <button type="button" class="close" data-dismiss="alert">
-            <span>&times;</span>
-        </button>
-
-        <strong>danger</strong>
-    </div>
-
-
 </div>
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="popover"]').popover()
+    })
+</script>
+
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
